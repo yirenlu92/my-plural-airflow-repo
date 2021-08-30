@@ -1,0 +1,6 @@
+dependencies:
+- name: postgres
+  repository: cm://app.plural.sh/cm/postgres
+  version: 0.1.25
+digest: sha256:5ebf1b56d77ceaa80203a110e33d15fae33bf58ea57947849b2715528e2ca477
+generated: "2021-08-28T20:24:35.719424-04:00"

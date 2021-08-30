@@ -1,0 +1,33 @@
+apiVersion: plural.sh/v1alpha1
+kind: Context
+spec:
+  bundles:
+  - repository: airflow
+    name: gcp-airflow
+  - repository: console
+    name: console-gcp
+  configuration:
+    airflow:
+      adminEmail: yirenlu92@gmail.com
+      adminFirst: Yiren
+      adminLast: Lu
+      adminUsername: yirenlu
+      airflowBucket: airflow-bucket-logs
+      branchName: master
+      dagRepo: dag-repo
+      hostname: airflow.tryunitofwork.com
+    bootstrap:
+      dns_domain: tryunitofwork.com
+      ownerEmail: yirenlu92@gmail.com
+      pluralDns: true
+      txt_owner: ren-plural-2
+      vpc_name: ren-plural-2
+    console:
+      admin_email: yirenlu92@gmail.com
+      admin_name: Yiren
+      console_dns: console.tryunitofwork.com
+      git_email: yirenlu13@gmail.com
+      git_user: yirenlu92
+    monitoring: {}
+    postgres:
+      wal_bucket: wal-archives
