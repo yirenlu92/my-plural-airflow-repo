@@ -1,7 +1,7 @@
 terraform {
 	backend "gcs" {
-		bucket = "ren-pluralsh-2-tf-state"
-		prefix = "ren-cluster-2/bootstrap"
+		bucket = "ren-plural-3-tf-state"
+		prefix = "ren-cluster-3/bootstrap"
 	}
 
 	required_providers {
@@ -47,9 +47,9 @@ module "gcp-bootstrap" {
 
 
   gcp_project_id = "pluralsh"
-  cluster_name = "ren-cluster-2"
-  vpc_name_prefix = "ren-plural-2"
-  externaldns_sa_name = "ren-cluster-2-externaldns"
+  cluster_name = "ren-cluster-3"
+  vpc_name_prefix = "ren-plural-cloud-3"
+  externaldns_sa_name = "ren-cluster-3-externaldns"
   gcp_location = "us-east1-b"
 
 }

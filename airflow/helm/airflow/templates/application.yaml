@@ -4,8 +4,7 @@ metadata:
   name: airflow
 spec:
   selector:
-    matchLabels:
-      app.kubernetes.io/managed-by: Helm
+    matchLabels: {}
   componentKinds:
   - group: v1
     kind: Service
@@ -23,8 +22,8 @@ spec:
     kind: Job
   descriptor:
     type: airflow
-    version: 0.1.64
-    description: DAG-based dependency-aware job scheduler
+    version: 0.1.65
+    description: DAG-based dependency aware job scheduler
     icons:
-    - src: https://plural-assets.s3.us-east-2.amazonaws.com/uploads/repos/eb88ca01-21d6-464f-8fd5-f481b385c166/airflow.png?v=63785592490
+    - src: https://plural-assets.s3.us-east-2.amazonaws.com/uploads/repos/eb88ca01-21d6-464f-8fd5-f481b385c166/airflow.png?v=63798438225
     

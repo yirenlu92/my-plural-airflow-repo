@@ -12,22 +12,22 @@ spec:
       adminFirst: Yiren
       adminLast: Lu
       adminUsername: yirenlu
-      airflowBucket: airflow-bucket-logs
+      airflowBucket: ren-plural-2-airflow-bucket
       branchName: master
-      dagRepo: dag-repo
-      hostname: airflow.tryunitofwork.com
+      dagRepo: ren-plural-dag-repo
+      hostname: airflow.tryunitofwork.onplural.sh
     bootstrap:
-      dns_domain: tryunitofwork.com
+      dns_domain: tryunitofwork.onplural.sh
       ownerEmail: yirenlu92@gmail.com
       pluralDns: true
-      txt_owner: ren-plural-2
-      vpc_name: ren-plural-2
+      txt_owner: ren-plural-3
+      vpc_name: ren-plural-cloud-3
     console:
       admin_email: yirenlu92@gmail.com
       admin_name: Yiren
-      console_dns: console.tryunitofwork.com
+      console_dns: console.tryunitofwork.onplural.sh
       git_email: yirenlu13@gmail.com
       git_user: yirenlu92
     monitoring: {}
     postgres:
-      wal_bucket: wal-archives
+      wal_bucket: ren-plural-2-wal-archives

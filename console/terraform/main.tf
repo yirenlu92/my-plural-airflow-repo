@@ -1,7 +1,7 @@
 terraform {
 	backend "gcs" {
-		bucket = "ren-pluralsh-2-tf-state"
-		prefix = "ren-cluster-2/console"
+		bucket = "ren-plural-3-tf-state"
+		prefix = "ren-cluster-3/console"
 	}
 
 	required_providers {
@@ -31,7 +31,7 @@ data "google_client_config" "current" {}
 
 
 data "google_container_cluster" "cluster" {
-  name = "ren-cluster-2"
+  name = "ren-cluster-3"
   location = local.gcp_region
 }
 
@@ -52,7 +52,7 @@ module "gcp" {
 
 
   project_id = "pluralsh"
-  cluster_name = "ren-cluster-2"
+  cluster_name = "ren-cluster-3"
   namespace = "console"
 
 }
