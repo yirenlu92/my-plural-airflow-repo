@@ -8,7 +8,7 @@ step "terraform-init" {
   target  = "airflow/terraform"
   command = "terraform"
   args    = ["init"]
-  sha     = "h1:DBdUlezSQJUhDDqF5vjkWelsGUYABr2rTP+Shcfartg="
+  sha     = ""
 }
 
 step "terraform-apply" {
@@ -21,7 +21,7 @@ step "terraform-apply" {
     "-auto-approve",
   ]
 
-  sha = "h1:DBdUlezSQJUhDDqF5vjkWelsGUYABr2rTP+Shcfartg="
+  sha = ""
 }
 
 step "terraform-output" {
@@ -35,7 +35,7 @@ step "terraform-output" {
     "airflow",
   ]
 
-  sha = "h1:DBdUlezSQJUhDDqF5vjkWelsGUYABr2rTP+Shcfartg="
+  sha = ""
 }
 
 step "kube-init" {
@@ -48,7 +48,7 @@ step "kube-init" {
     "kube-init",
   ]
 
-  sha = "bb7047e5d29e3d85bc3883073bc24f68dfb0a8c4a1cd818eb51590a0644791f7"
+  sha = ""
 }
 
 step "crds" {
@@ -62,7 +62,7 @@ step "crds" {
     "airflow",
   ]
 
-  sha = "h1:47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+  sha = ""
 }
 
 step "bounce" {
@@ -76,5 +76,5 @@ step "bounce" {
     "airflow",
   ]
 
-  sha = "h1:L2CC6+s4j8f12ka9cQjbEiy22ioEr9Z3fn231xJfSfE="
+  sha = ""
 }

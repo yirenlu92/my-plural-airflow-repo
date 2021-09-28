@@ -1,7 +1,7 @@
 terraform {
 	backend "gcs" {
-		bucket = "ren-plural-3-tf-state"
-		prefix = "ren-cluster-3/postgres"
+		bucket = "ren-plural-cluster-4-tf-state"
+		prefix = "ren-plural-cluster-4/postgres"
 	}
 
 	required_providers {
@@ -31,7 +31,7 @@ data "google_client_config" "current" {}
 
 
 data "google_container_cluster" "cluster" {
-  name = "ren-cluster-3"
+  name = "ren-plural-cluster-4"
   location = local.gcp_region
 }
 
@@ -51,7 +51,7 @@ module "gcp" {
 ### END MANUAL SECTION <<gcp>>
 
 
-  cluster_name = "ren-cluster-3"
+  cluster_name = "ren-plural-cluster-4"
   namespace = "postgres"
   
 
