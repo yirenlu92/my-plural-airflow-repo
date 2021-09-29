@@ -4,6 +4,8 @@ spec:
   bundles:
   - repository: airflow
     name: gcp-airflow
+  - repository: console
+    name: console-gcp
   configuration:
     airflow:
       adminEmail: yirenlu92@gmail.com
@@ -19,5 +21,12 @@ spec:
       ownerEmail: yirenlu92@gmail.com
       pluralDns: true
       vpc_name: plural
+    console:
+      admin_email: yirenlu92@gmail.com
+      admin_name: Yiren
+      console_dns: console.tryunitofwork.onplural.sh
+      git_email: yirenlu13@gmail.com
+      git_user: yirenlu92
+    monitoring: {}
     postgres:
       wal_bucket: plural-wal-archives
