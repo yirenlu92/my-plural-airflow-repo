@@ -1,10 +1,10 @@
 apiVersion: plural.sh/v1alpha1
 kind: ProjectManifest
 metadata:
-  name: ren-plural-cluster-4
+  name: ren-plural-cluster-5
 spec:
-  cluster: ren-plural-cluster-4
-  bucket: ren-plural-cluster-4-tf-state
+  cluster: ren-plural-cluster-5
+  bucket: ren-plural-cluster-5-tf-state
   project: pluralsh
   provider: google
   region: ""

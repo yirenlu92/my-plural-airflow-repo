@@ -8,7 +8,7 @@ step "terraform-init" {
   target  = "postgres/terraform"
   command = "terraform"
   args    = ["init"]
-  sha     = ""
+  sha     = "h1:XxB/kQDwEwn/+fBAk5KJqVTjvgOdnnDOQieBFYU9IaM="
 }
 
 step "terraform-apply" {
@@ -21,7 +21,7 @@ step "terraform-apply" {
     "-auto-approve",
   ]
 
-  sha = ""
+  sha = "h1:XxB/kQDwEwn/+fBAk5KJqVTjvgOdnnDOQieBFYU9IaM="
 }
 
 step "terraform-output" {
@@ -35,7 +35,7 @@ step "terraform-output" {
     "postgres",
   ]
 
-  sha = ""
+  sha = "h1:XxB/kQDwEwn/+fBAk5KJqVTjvgOdnnDOQieBFYU9IaM="
 }
 
 step "kube-init" {
@@ -48,7 +48,7 @@ step "kube-init" {
     "kube-init",
   ]
 
-  sha = ""
+  sha = "96d7b0c6f18eef87324c69744f47b4f9564fa19b006c1c3e87587de6504b5f73"
 }
 
 step "crds" {
@@ -62,7 +62,7 @@ step "crds" {
     "postgres",
   ]
 
-  sha = ""
+  sha = "h1:+KtpiGhaAg9Db5EdGawKjfUTQqpyrQFC87h9Gj2L/zQ="
 }
 
 step "bounce" {
@@ -76,5 +76,5 @@ step "bounce" {
     "postgres",
   ]
 
-  sha = ""
+  sha = "h1:jnQ61IDacdwE5K4EOyARpLkkJEoLbrmiqgewSEj6U54="
 }

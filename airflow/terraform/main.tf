@@ -1,7 +1,7 @@
 terraform {
 	backend "gcs" {
-		bucket = "ren-plural-cluster-4-tf-state"
-		prefix = "ren-plural-cluster-4/airflow"
+		bucket = "ren-plural-cluster-5-tf-state"
+		prefix = "ren-plural-cluster-5/airflow"
 	}
 
 	required_providers {
@@ -31,7 +31,7 @@ data "google_client_config" "current" {}
 
 
 data "google_container_cluster" "cluster" {
-  name = "ren-plural-cluster-4"
+  name = "ren-plural-cluster-5"
   location = local.gcp_region
 }
 
@@ -52,7 +52,7 @@ module "gcp" {
 
 
   project_id = "pluralsh"
-  cluster_name = "ren-plural-cluster-4"
+  cluster_name = "ren-plural-cluster-5"
   namespace = "airflow"
   airflow_bucket = "plural-airflow-logs"
   gcp_location = "us-east1-b"

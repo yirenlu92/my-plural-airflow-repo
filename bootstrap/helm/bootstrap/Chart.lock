@@ -6,4 +6,4 @@ dependencies:
   repository: cm://app.plural.sh/cm/bootstrap
   version: 0.1.1
 digest: sha256:050945f3c29afc724cff997b1731cae938d0d98d6dcb12921e5538d9f604551c
-generated: "2021-09-28T18:07:56.68367-04:00"
+generated: "2021-09-29T13:27:21.292108-04:00"

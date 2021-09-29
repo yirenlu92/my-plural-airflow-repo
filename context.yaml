@@ -12,7 +12,7 @@ spec:
       adminUsername: yirenlu
       airflowBucket: plural-airflow-logs
       branchName: master
-      dagRepo: plural-airflow-dag
+      dagRepo: plural-airflow-dags
       hostname: airflow.tryunitofwork.onplural.sh
     bootstrap:
       dns_domain: tryunitofwork.onplural.sh
