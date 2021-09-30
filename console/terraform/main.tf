@@ -1,23 +1,23 @@
 terraform {
-	backend "gcs" {
-		bucket = "ren-plural-cluster-5-tf-state"
-		prefix = "ren-plural-cluster-5/console"
-	}
+  backend "gcs" {
+    bucket = "ren-plural-cluster-5-tf-state"
+    prefix = "ren-plural-cluster-5/console"
+  }
 
-	required_providers {
+  required_providers {
     google = {
       source  = "hashicorp/google"
       version = "~> 3.65.0"
     }
-		kubernetes = {
-			source  = "hashicorp/kubernetes"
-			version = "~> 2.0.3"
-		}
+    kubernetes = {
+      source  = "hashicorp/kubernetes"
+      version = "~> 2.0.3"
+    }
   }
 }
 
 locals {
-	gcp_location  = "us-east1-b"
+  gcp_location  = "us-east1-b"
   gcp_location_parts = split("-", local.gcp_location)
   gcp_region         = "${local.gcp_location_parts[0]}-${local.gcp_location_parts[1]}"
 }
