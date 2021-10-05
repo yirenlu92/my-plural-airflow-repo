@@ -51,7 +51,7 @@ step "kube-init" {
     "kube-init",
   ]
 
-  sha     = "233b0a9d04bace23f23438f305ef4a2f256f2f338f018026dce066c46f3ebf7c"
+  sha     = "83505ded983a1417cfb9f174e4a465a0034a9d39d88f76bed12fab764ad9d289"
   retries = 0
 }
 
@@ -81,6 +81,6 @@ step "bounce" {
     "console",
   ]
 
-  sha     = "h1:CKBIM0OyDrP71+rb0VOY5Cd/CdWY9ND8hrSfVi4Jobc="
+  sha     = "h1:aK79LWZvPS471pGwrkhQC8oMuCH+EdwWyZLZvp3AudQ="
   retries = 0
 }
