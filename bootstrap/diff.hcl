@@ -53,6 +53,6 @@ step "helm" {
     "bootstrap",
   ]
 
-  sha     = "h1:YNKBRk799oe4UWmD1hCAkZdNhuvN5XvkknGXqf6Mk6o="
+  sha     = "h1:A1rQPBghZp8a1l956AfPgyLWKznj9SnIo2/m8ioWrEI="
   retries = 0
 }
