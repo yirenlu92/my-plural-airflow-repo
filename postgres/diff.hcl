@@ -8,7 +8,8 @@ step "terraform-init" {
   target  = "postgres/terraform"
   command = "terraform"
   args    = ["init"]
-  sha     = ""
+  sha     = "h1:GQiGiAH8LlRNF+29w8qPr3cMCRUJFiNJQpoc66fTnfA="
+  retries = 0
 }
 
 step "terraform" {
@@ -22,7 +23,8 @@ step "terraform" {
     "postgres",
   ]
 
-  sha = ""
+  sha     = "h1:GQiGiAH8LlRNF+29w8qPr3cMCRUJFiNJQpoc66fTnfA="
+  retries = 0
 }
 
 step "kube-init" {
@@ -36,7 +38,8 @@ step "kube-init" {
     "postgres",
   ]
 
-  sha = ""
+  sha     = "99e979a1b05340f5388c51c4a142efdbd0dfea95a654200f3f99e0b5fc9d636f"
+  retries = 0
 }
 
 step "helm" {
@@ -50,5 +53,6 @@ step "helm" {
     "postgres",
   ]
 
-  sha = ""
+  sha     = "h1:XZThDLjtRoWG9EdW8kdx/GTrjf+gG995mePcoo+8DuM="
+  retries = 0
 }
