@@ -38,7 +38,7 @@ step "kube-init" {
     "monitoring",
   ]
 
-  sha     = "b65613bb419c1b7ff5da92a07cc725e7308fc5931394a6abed86d7ec80af83f2"
+  sha     = "918ba0a2f4b53b0f73eaecc0bee67bedf6fb5ffb4b0d3d278439cccad215886a"
   retries = 0
 }
 
@@ -53,6 +53,6 @@ step "helm" {
     "monitoring",
   ]
 
-  sha     = "h1:/Ny7GnmUMR50Sfj84VlcprCGiGFZI1VueIMvs1rpUeg="
+  sha     = "h1:On4jDy/UEPjj6Iqj9Y0B0OIdMxfNh5SrghnOV3FYmhA="
   retries = 0
 }
