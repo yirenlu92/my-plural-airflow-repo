@@ -66,7 +66,7 @@ step "crds" {
     "bootstrap",
   ]
 
-  sha     = "h1:m6KXzq4c7fjgjRguP0TwrCwyMv0Qrbcr/EBypVvuD7Y="
+  sha     = "h1:2JPP5RSjImqElZjDaa+96yIeKTUhHx6ZIauwua3lyCY="
   retries = 0
 }
 
